@@ -22,7 +22,13 @@ public class TrackPlayer : MonoBehaviour {
 
 		Vector3 newPos = position;
 
-		float parallaxOffset = player.position.x / parallax;
+		float parallaxOffset = 0f;
+
+		if (parallax > 0f) {
+
+			parallaxOffset = player.position.x / parallax;
+
+		}
 
 		newPos.x = player.position.x + offset.x - parallaxOffset;
 

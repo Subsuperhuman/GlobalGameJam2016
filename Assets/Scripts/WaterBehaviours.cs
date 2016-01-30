@@ -5,6 +5,8 @@ public class WaterBehaviours : MonoBehaviour {
 
 	public float defaultLevel;
 
+	public float maxLevel;
+
 	private float level = 0;
 
 	public Camera cam; 
@@ -35,6 +37,10 @@ public class WaterBehaviours : MonoBehaviour {
 
 		if (level < baseLevel) {
 			level = baseLevel;
+		}
+
+		if (level > maxLevel) {
+			level = maxLevel;
 		}
 
 
