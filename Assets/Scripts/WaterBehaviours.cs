@@ -11,8 +11,13 @@ public class WaterBehaviours : MonoBehaviour {
 
 	public float baseLevel;
 
+	public float fillRate = 0.01f;
+
+	private SeasonController seasonCtrl;
+
 	// Use this for initialization
-	void Start () {;
+	void Start () {
+		seasonCtrl = (SeasonController) FindObjectOfType (typeof(SeasonController));
 	}
 	
 	// Update is called once per frame
@@ -22,6 +27,15 @@ public class WaterBehaviours : MonoBehaviour {
 
 		Vector3 newP;
 
+		if (seasonCtrl.season == "spring") {
+			level += fillRate;
+		} else if (seasonCtrl.season == "summer") {
+			level -= 0.5f*fillRate;
+		}
+
+		if (level < baseLevel) {
+			level = baseLevel;
+		}
 
 
 		newP.x = cam.transform.position.x;
