@@ -18,7 +18,7 @@ public class TreeBehaviours : MonoBehaviour {
 	void Start () {
 
 		sp = GetComponent<SpriteRenderer>();
-		seasonCtrl = GameObject.Find ("Seasons").GetComponent<SeasonController>();
+		seasonCtrl = (SeasonController) FindObjectOfType (typeof(SeasonController));
 	
 	}
 	
@@ -30,6 +30,7 @@ public class TreeBehaviours : MonoBehaviour {
 		}
 		if (seasonCtrl.season == "summer") {
 			sp.sprite = summerTree;
+			print ("summer tree!");
 		}
 		if (seasonCtrl.season == "autumn") {
 			sp.sprite = autumnTree;

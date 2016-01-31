@@ -13,7 +13,7 @@ public class WaterSurfaceController : MonoBehaviour {
 	void Start () {
 
 		anim = GetComponent<Animator>();
-		seasonCtrl = GameObject.Find ("Seasons").GetComponent<SeasonController>();
+		seasonCtrl = (SeasonController) FindObjectOfType (typeof(SeasonController));
 
 		anim.SetInteger("Season", 0);
 	

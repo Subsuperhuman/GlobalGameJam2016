@@ -61,6 +61,10 @@ public class FollowerBehaviours : MonoBehaviour {
 			if(!drumming){
 				Move (direction * followSpeed * Time.deltaTime);
 			}
+			else
+			{
+				m_Anim.SetFloat("Speed", 0f);
+			}
 
 		} else {
 			m_Anim.SetFloat("Speed", 0f);

@@ -21,7 +21,15 @@ public class PlayerBehaviours : MonoBehaviour {
 
 	private SeasonController seasonCtrl;
 
-	
+	private bool audioPlaying = false;
+
+	public AudioClip springRitual;
+	public AudioClip summerRitual;
+	public AudioClip autumnRitual;
+	public AudioClip winterRitual;
+
+	private AudioSource chant;
+
 	private void Awake()
 	{
 		// Setting up references.
@@ -30,7 +38,44 @@ public class PlayerBehaviours : MonoBehaviour {
 		m_Anim = GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		seasonCtrl = (SeasonController) FindObjectOfType (typeof(SeasonController));
+		chant = GameObject.Find ("Chanting").GetComponent<AudioSource> ();
 
+
+	}
+
+	private void Update(){
+
+		if (seasonCtrl.RitualInProgress) {
+			m_Anim.SetBool ("Ritual", true);
+			if(!audioPlaying){
+				chant.Play();
+				audioPlaying = true;
+			}
+			
+		}
+		
+		if(!chant.isPlaying && seasonCtrl.RitualInProgress) {
+			
+			seasonCtrl.changeSeason();
+			
+			m_Anim.SetBool ("Ritual", false);
+			
+			if (seasonCtrl.season == "spring") {
+				chant.clip = summerRitual;
+			}
+			if (seasonCtrl.season == "summer") {
+				chant.clip = autumnRitual;
+			}
+			if (seasonCtrl.season == "autumn") {
+				chant.clip = winterRitual;
+			}
+			if (seasonCtrl.season == "winter") {
+				chant.clip = springRitual;
+			}
+			
+			audioPlaying = false;
+		}
+		
 
 	}
 	
@@ -48,13 +93,7 @@ public class PlayerBehaviours : MonoBehaviour {
 				m_Grounded = true;
 		}
 
-		if (seasonCtrl.RitualInProgress) {
-			m_Anim.SetBool ("Ritual", true);
-		} else {
-			m_Anim.SetBool ("Ritual", false);
-		}
 
-		
 
 
 		m_Anim.SetBool("Ground", m_Grounded);
