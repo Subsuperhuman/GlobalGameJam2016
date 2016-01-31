@@ -32,8 +32,6 @@ public class SeasonController : MonoBehaviour {
 		} else if(Input.GetKeyUp (KeyCode.Q)){
 
 		}
-
-		print (season);
 	}
 
 	public void changeSeason() {
