@@ -8,6 +8,13 @@ public class SeasonController : MonoBehaviour {
 	private bool seasonChange = false;
 	private bool toggleSeason = false;
 
+	private bool ritualInProgress = false;
+
+	public bool RitualInProgress {
+		get {
+			return ritualInProgress;
+		}
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -18,23 +25,19 @@ public class SeasonController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown (KeyCode.Q)) {
 
-		if (!Input.GetKeyDown (KeyCode.Q)) {
-			toggleSeason = false;
-		}
+			startRitual();
+			
+		} else if(Input.GetKeyUp (KeyCode.Q)){
 
-		if (Input.GetKeyDown (KeyCode.Q) && !toggleSeason) {
-			toggleSeason = true;
-			seasonChange = true;
-		}
-
-		if (seasonChange) {
 			changeSeason();
 		}
-		
 	}
 
-	void changeSeason() {
+	public void changeSeason() {
+
+		ritualInProgress = false;
 
 		if (season == "spring") {
 			season = "summer";
@@ -49,5 +52,9 @@ public class SeasonController : MonoBehaviour {
 		print (season);
 
 		seasonChange = false;
+	}
+
+	public void startRitual(){
+		ritualInProgress = true;
 	}
 }

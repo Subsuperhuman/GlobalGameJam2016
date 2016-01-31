@@ -18,6 +18,9 @@ public class PlayerBehaviours : MonoBehaviour {
 	private Animator m_Anim;            // Reference to the player's animator component.
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+
+	private SeasonController seasonCtrl;
+
 	
 	private void Awake()
 	{
@@ -26,6 +29,8 @@ public class PlayerBehaviours : MonoBehaviour {
 		m_CeilingCheck = transform.Find("CeilingCheck");
 		m_Anim = GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		seasonCtrl = (SeasonController) FindObjectOfType (typeof(SeasonController));
+
 
 	}
 	
@@ -42,6 +47,16 @@ public class PlayerBehaviours : MonoBehaviour {
 			if (colliders[i].gameObject != gameObject)
 				m_Grounded = true;
 		}
+
+		if (seasonCtrl.RitualInProgress) {
+			m_Anim.SetBool ("Ritual", true);
+		} else {
+			m_Anim.SetBool ("Ritual", false);
+		}
+
+		
+
+
 		m_Anim.SetBool("Ground", m_Grounded);
 
 

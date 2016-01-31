@@ -1,38 +1,39 @@
 fileFormatVersion: 2
-guid: ed0e277b2ad868b4080b2ec0134409aa
-timeCreated: 1454216731
+guid: 810fe40408bd3c243a95f68979186c78
+timeCreated: 1454213272
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: shaman_0
-    21300002: shaman_1
-    21300004: shaman_2
-    21300006: shaman_3
-    21300008: shaman_4
-    21300010: shaman_5
-    21300012: shaman_6
-    21300014: shaman_7
-    21300016: shaman_8
-    21300018: shaman_9
-    21300020: shaman_10
-    21300022: shaman_11
-    21300024: shaman_12
-    21300026: shaman_13
-    21300028: shaman_14
-    21300030: shaman_15
-    21300032: shaman_16
-    21300034: shaman_17
-    21300036: shaman_18
-    21300038: shaman_19
-    21300040: shaman_20
-    21300042: shaman_21
-    21300044: shaman_22
-    21300046: shaman_23
-    21300048: shaman_24
-    21300050: shaman_25
-    21300052: shaman_26
-    21300054: shaman_27
-    21300056: shaman_28
+    21300000: shaman_ritual_0
+    21300002: shaman_ritual_1
+    21300004: shaman_ritual_2
+    21300006: shaman_ritual_3
+    21300008: shaman_ritual_4
+    21300010: shaman_ritual_5
+    21300012: shaman_ritual_6
+    21300014: shaman_ritual_7
+    21300016: shaman_ritual_8
+    21300018: shaman_ritual_9
+    21300020: shaman_ritual_10
+    21300022: shaman_ritual_11
+    21300024: shaman_ritual_12
+    21300026: shaman_ritual_13
+    21300028: shaman_ritual_14
+    21300030: shaman_ritual_15
+    21300032: shaman_ritual_16
+    21300034: shaman_ritual_17
+    21300036: shaman_ritual_18
+    21300038: shaman_ritual_19
+    21300040: shaman_ritual_20
+    21300042: shaman_ritual_21
+    21300044: shaman_ritual_22
+    21300046: shaman_ritual_23
+    21300048: shaman_ritual_24
+    21300050: shaman_ritual_25
+    21300052: shaman_ritual_26
+    21300054: shaman_ritual_27
+    21300056: shaman_ritual_28
+    21300058: shaman_ritual_29
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -79,87 +80,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: shaman_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_3
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_4
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_5
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_6
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_7
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_8
+    - name: shaman_ritual_0
       rect:
         serializedVersion: 2
         x: 0
@@ -169,7 +90,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_9
+    - name: shaman_ritual_1
       rect:
         serializedVersion: 2
         x: 256
@@ -179,7 +100,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_10
+    - name: shaman_ritual_2
       rect:
         serializedVersion: 2
         x: 512
@@ -189,7 +110,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_11
+    - name: shaman_ritual_3
       rect:
         serializedVersion: 2
         x: 768
@@ -199,7 +120,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_12
+    - name: shaman_ritual_4
       rect:
         serializedVersion: 2
         x: 1024
@@ -209,7 +130,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_13
+    - name: shaman_ritual_5
       rect:
         serializedVersion: 2
         x: 1280
@@ -219,7 +140,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_14
+    - name: shaman_ritual_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shaman_ritual_7
       rect:
         serializedVersion: 2
         x: 1792
@@ -229,7 +160,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_15
+    - name: shaman_ritual_8
       rect:
         serializedVersion: 2
         x: 0
@@ -239,7 +170,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_16
+    - name: shaman_ritual_9
       rect:
         serializedVersion: 2
         x: 256
@@ -249,7 +180,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_17
+    - name: shaman_ritual_10
       rect:
         serializedVersion: 2
         x: 512
@@ -259,7 +190,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_18
+    - name: shaman_ritual_11
       rect:
         serializedVersion: 2
         x: 768
@@ -269,7 +200,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_19
+    - name: shaman_ritual_12
       rect:
         serializedVersion: 2
         x: 1024
@@ -279,7 +210,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_20
+    - name: shaman_ritual_13
       rect:
         serializedVersion: 2
         x: 1280
@@ -289,7 +220,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_21
+    - name: shaman_ritual_14
       rect:
         serializedVersion: 2
         x: 1536
@@ -299,7 +230,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_22
+    - name: shaman_ritual_15
       rect:
         serializedVersion: 2
         x: 1792
@@ -309,7 +240,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_23
+    - name: shaman_ritual_16
       rect:
         serializedVersion: 2
         x: 0
@@ -319,7 +250,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_24
+    - name: shaman_ritual_17
       rect:
         serializedVersion: 2
         x: 256
@@ -329,7 +260,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_25
+    - name: shaman_ritual_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shaman_ritual_19
       rect:
         serializedVersion: 2
         x: 768
@@ -339,7 +280,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_26
+    - name: shaman_ritual_20
       rect:
         serializedVersion: 2
         x: 1024
@@ -349,7 +290,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_27
+    - name: shaman_ritual_21
       rect:
         serializedVersion: 2
         x: 1280
@@ -359,10 +300,20 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: shaman_28
+    - name: shaman_ritual_22
       rect:
         serializedVersion: 2
         x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shaman_ritual_23
+      rect:
+        serializedVersion: 2
+        x: 1792
         y: 0
         width: 256
         height: 256

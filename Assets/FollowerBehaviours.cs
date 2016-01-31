@@ -16,24 +16,38 @@ public class FollowerBehaviours : MonoBehaviour {
 
 	public float maxSpeed = 10;
 
+	private bool drumming = false;
+
+	private SeasonController seasonCtrl;
+
 
 	private void Awake()
 	{
 		// Setting up references.
 		m_Anim = GetComponent<Animator>();
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+
+
 	}
 
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find("Player1").transform;
-
+		seasonCtrl = (SeasonController) FindObjectOfType (typeof(SeasonController));
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (seasonCtrl.RitualInProgress) {
+			m_Anim.SetBool ("Ritual", true);
+			drumming = true;
+		} else {
+			drumming = false;
+			m_Anim.SetBool ("Ritual", false);
+		}
 
 		if (Vector3.Distance (transform.position, player.position) > offset) {//move if distance from target is greater than 1
 			float direction;
@@ -43,8 +57,10 @@ public class FollowerBehaviours : MonoBehaviour {
 			} else {
 				direction = 1;
 			}
-			
-			Move (direction * followSpeed * Time.deltaTime);
+
+			if(!drumming){
+				Move (direction * followSpeed * Time.deltaTime);
+			}
 
 		} else {
 			m_Anim.SetFloat("Speed", 0f);

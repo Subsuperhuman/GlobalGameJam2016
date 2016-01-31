@@ -24,6 +24,7 @@ public class PlayerControls : MonoBehaviour {
 				// Read the jump input in Update so button presses aren't missed.
 				m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
 			}
+
 		}
 		
 		
