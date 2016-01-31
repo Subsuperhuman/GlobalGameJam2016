@@ -7,10 +7,10 @@ public class AmbienceController : MonoBehaviour {
 
 	AudioClip clip;
 
-	public AudioClip springAmbience;
-	public AudioClip summerAmbience;
-	public AudioClip autumnAmbience;
-	public AudioClip winterAmbience;
+	public AudioSource springAmbience;
+	public AudioSource summerAmbience;
+	public AudioSource autumnAmbience;
+	public AudioSource winterAmbience;
 
 	private SeasonController seasonCtrl;
 
@@ -23,17 +23,48 @@ public class AmbienceController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		bool anyPlaying = springAmbience.isPlaying || summerAmbience.isPlaying || autumnAmbience.isPlaying || winterAmbience.isPlaying;
+
 		if (seasonCtrl.season == "spring") {
-			source.clip = springAmbience;
+
+			if(!springAmbience.isPlaying)
+			{
+				springAmbience.Play();
+				summerAmbience.Stop ();
+				autumnAmbience.Stop();
+				winterAmbience.Stop ();
+			}
 		}
 		if (seasonCtrl.season == "summer") {
-			source.clip = summerAmbience;
+
+			if(!summerAmbience.isPlaying)
+			{
+				springAmbience.Stop ();
+				summerAmbience.Play ();
+				autumnAmbience.Stop();
+				winterAmbience.Stop ();
+			}
 		}
 		if (seasonCtrl.season == "autumn") {
-			source.clip = autumnAmbience;
+
+			if(!autumnAmbience.isPlaying)
+			{
+				springAmbience.Stop();
+				summerAmbience.Stop ();
+				autumnAmbience.Play();
+				winterAmbience.Stop ();
+			}
 		}
 		if (seasonCtrl.season == "winter") {
-			source.clip = winterAmbience;
+
+			if(!winterAmbience.isPlaying)
+			{
+				springAmbience.Stop();
+				summerAmbience.Stop ();
+				autumnAmbience.Stop();
+				winterAmbience.Play ();
+			}
 		}
 	}
 }
