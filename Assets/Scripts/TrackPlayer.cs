@@ -31,6 +31,7 @@ public class TrackPlayer : MonoBehaviour {
 		}
 
 		newPos.x = player.position.x + offset.x - parallaxOffset;
+		newPos.y = player.position.y;
 
 		transform.position = newPos;
 

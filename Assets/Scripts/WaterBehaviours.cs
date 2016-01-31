@@ -31,7 +31,7 @@ public class WaterBehaviours : MonoBehaviour {
 		seasonCtrl = (SeasonController) FindObjectOfType (typeof(SeasonController));
 		meshRenderer = GetComponent<MeshRenderer> ();
 		box = GetComponent<BoxCollider2D> ();
-		level = baseLevel;
+		level = defaultLevel;
 	}
 	
 	// Update is called once per frame
@@ -76,7 +76,7 @@ public class WaterBehaviours : MonoBehaviour {
 
 
 		newP.x = cam.transform.position.x;
-		newP.y = defaultLevel + level + baseLevel;
+		newP.y = level;
 		newP.z = transform.position.z;
 
 		transform.position = newP;
