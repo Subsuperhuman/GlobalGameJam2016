@@ -1,24 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof (SeasonController))]
+public class WaterSurfaceController : MonoBehaviour {
 
-public class TreeBehaviours : MonoBehaviour {
+	private Animator anim;
 
 	private SeasonController seasonCtrl;
-	private SpriteRenderer sp;
 
-	public Sprite springTree;
-	public Sprite summerTree;
-	public Sprite autumnTree;
-	public Sprite winterTree;
 
 
 	// Use this for initialization
 	void Start () {
 
-		sp = GetComponent<SpriteRenderer>();
+		anim = GetComponent<Animator>();
 		seasonCtrl = GameObject.Find ("Seasons").GetComponent<SeasonController>();
+
+		anim.SetInteger("Season", 0);
 	
 	}
 	
@@ -26,16 +23,17 @@ public class TreeBehaviours : MonoBehaviour {
 	void Update () {
 
 		if (seasonCtrl.season == "spring") {
-			sp.sprite = springTree;
+			anim.SetInteger("Season", 0);
+
 		}
 		if (seasonCtrl.season == "summer") {
-			sp.sprite = summerTree;
+			anim.SetInteger("Season", 1);
 		}
 		if (seasonCtrl.season == "autumn") {
-			sp.sprite = autumnTree;
+			anim.SetInteger("Season", 2);
 		}
 		if (seasonCtrl.season == "winter") {
-			sp.sprite = winterTree;
+			anim.SetInteger("Season", 3);
 		}
 	
 	}
