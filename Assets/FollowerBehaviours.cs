@@ -28,6 +28,8 @@ public class FollowerBehaviours : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find("Player1").transform;
+
+
 	}
 	
 	// Update is called once per frame
