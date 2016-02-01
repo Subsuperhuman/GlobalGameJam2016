@@ -4,6 +4,8 @@ using System.Collections;
 public class TrackPlayer : MonoBehaviour {
 
 	public Vector3 offset;			// The offset at which the Health Bar follows the player.
+
+	public float parallax;
 	
 	private Transform player;		// Reference to the player.
 
@@ -20,7 +22,16 @@ public class TrackPlayer : MonoBehaviour {
 
 		Vector3 newPos = position;
 
-		newPos.x = player.position.x;
+		float parallaxOffset = 0f;
+
+		if (parallax > 0f) {
+
+			parallaxOffset = player.position.x / parallax;
+
+		}
+
+		newPos.x = player.position.x + offset.x - parallaxOffset;
+		newPos.y = player.position.y;
 
 		transform.position = newPos;
 
