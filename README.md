@@ -3,6 +3,10 @@ A game for the 2016 <a href="http://globalgamejam.org/">Global Game Jam</a>
 
 This contains the code for the Unity/C# project that we produced for the global game jam. The theme for the jam was Rituals, and we decided to centre the game around the change of the seasons, and the pagan rituals surrounding it.
 
+![soltice game](http://globalgamejam.org/sites/default/files/styles/game_content__wide/public/games/screenshots/ritual_0.png?itok=wtAbWDXr)
+
+![soltice game](http://globalgamejam.org/sites/default/files/styles/game_content__wide/public/games/screenshots/spring.png?itok=h5XCg6Z9)
+
 Our global game jam page where you can view the game in more detail is here:
 
 <h3><a href="http://globalgamejam.org/2016/games/solstice">Download Solstice Here</a></h3>
