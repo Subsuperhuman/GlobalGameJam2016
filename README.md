@@ -23,7 +23,8 @@ The team who created Solstice were:
 
 <a href="https://github.com/nicoleche">Nicolas Mendez</a> - Developer
 
-Sarah Chalk - Developer
+<a href="https://github.com/seokitty">Sarah Chalk</a> - Developer
+
 
 
 
